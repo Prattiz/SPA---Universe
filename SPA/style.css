@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 4rem 7.2rem;
+}
+
+h1{
+    color:#E1E1E6; 
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:3.5rem;
+    
+}
+
+a{
+    font-size: 2.4rem;
+    color:#C4C4CC;
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.9rem;
+    color:#E1E1E6;
+    font-weight: 400;
+    line-height: 160%;
+    
+}
+
+.home main div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    width: 40rem;
+    justify-content: center;
+}
+
+.explorer main div, .universe main div{
+     display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 50rem;
+    justify-content: center;
+    text-align: start;
+
+}
+
+button{
+    background: none;
+    color:white;
+    border:2px solid #fff;
+    padding: 1.2rem 3.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30rem;
+    
+}
+
+a:hover{
+    color:#fff;
+    font-size: 2.5rem;
+    transition: 0.5s;
+}
+
+.Spage{
+    color:#fff;
+    font-weight: 800;
+}
+
+
+.home main {
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+
+.universe main, .explorer main{
+    margin-left: 10.2rem;
+    
+}
+
+.home {
+    background: url("/OBJECTS/mountains-universe-1.png") no-repeat ; 
+}
+
+.universe {
+    background: url("/OBJECTS/mountains-universe-2.png")  no-repeat;
+}
+
+.explorer{
+    background: url("/OBJECTS/mountains-universe-3.png")  no-repeat;      
+}
+
+.universe, .explorer, .home{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 100%;
+}
+
+@media(max-width: 680px){
+    
+    header{
+        padding: 6rem 2.2rem 1.5rem;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1.5rem;
+    }
+
+    p{
+        line-height: 125%;
+    }
+
+    .universe main, .explorer main{
+        margin-left: 0;
+        
+    }
+
+    main div{
+        display: flex;
+
+       
+        width: 20vw;
+        
+    }
+
+    .explorer main div, .universe main div{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       gap: 1.4rem;
+       width: 100vw;
+       justify-content: center;
+   
+   }
+    
+
+    
+
+
+
+    
+    
+}
